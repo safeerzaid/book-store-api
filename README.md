@@ -1,20 +1,18 @@
 📚 Book Store API
-A RESTful API for a Book Store built with Node.js, Express.js and MongoDB.
+
+A RESTful API for a Book Store built with Node.js, Express.js, and MongoDB.
+
 🚀 Features
-
 Full CRUD Operations (Create, Read, Update, Delete)
-MongoDB with Mongoose ODM
-Environment variables with dotenv
+MongoDB integration with Mongoose ODM
+Environment variables using dotenv
 Clean MVC folder structure
-
 🛠️ Tech Stack
-
 Node.js
 Express.js
 MongoDB
 Mongoose
 dotenv
-
 📁 Folder Structure
 book-store-api/
 │
@@ -34,10 +32,10 @@ book-store-api/
 └── controller/
     └── controller.js
 ⚙️ Installation
-bash# Clone the repo
+# Clone the repository
 git clone https://github.com/YOUR_USERNAME/book-store-api.git
 
-# Go into the folder
+# Navigate to project folder
 cd book-store-api
 
 # Install dependencies
@@ -46,19 +44,26 @@ npm install
 # Create .env file
 touch .env
 🔑 Environment Variables
-Create a .env file in the root folder and add:
+
+Create a .env file in the root directory and add:
+
 PORT=3000
 MONGO_URI=your_mongodb_connection_string
-▶️ Run the App
-bash# Development
+▶️ Run the Application
+# Development mode
 nodemon index.js
 
-# Normal
+# Production mode
 node index.js
 📡 API Endpoints
-MethodEndpointDescriptionGET/api/booksGet all booksGET/api/books/:idGet book by IDPOST/api/booksCreate a new bookPUT/api/books/:idUpdate a bookDELETE/api/books/:idDelete a book
+Method	Endpoint	Description
+GET	/api/books	Get all books
+GET	/api/books/:id	Get book by ID
+POST	/api/books	Create a new book
+PUT	/api/books/:id	Update a book
+DELETE	/api/books/:id	Delete a book
 📝 Request Body (POST / PUT)
-json{
+{
   "name": "Harry Potter",
   "price": 299,
   "category": "adult",
@@ -66,7 +71,7 @@ json{
   "inStock": true
 }
 ✅ Response Example
-json{
+{
   "success": true,
   "message": "Book created successfully",
   "data": {
@@ -83,13 +88,13 @@ json{
 adult
 minor
 📌 Coming Soon
-
- Middleware
- User Authentication (JWT)
- Input Validation
- File Upload
- Pagination & Search
- Deploy to Render
-
+Middleware
+User Authentication (JWT)
+Input Validation
+File Upload
+Pagination & Search
+Deployment (Render)
 👨‍💻 Author
-Made with ❤️ by Safeer
+
+Safeer
+Made with ❤️
