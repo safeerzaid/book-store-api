@@ -17,7 +17,7 @@ const productsSchema = new mongoose.Schema(
   category: {
     type: String,
     required: [true, 'Catogory is required'],
-    enum: ['adult', "minor"]
+    enum: ['fiction', 'non-fiction', 'self-help', 'education', 'biography']
   },
   description: {
     type:String,
@@ -29,6 +29,7 @@ const productsSchema = new mongoose.Schema(
     type: Boolean,
     default: true,
   },
+
 },
 
   {

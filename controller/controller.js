@@ -129,7 +129,6 @@ const deleteBook = async (req, res) => {
 }
 
 
-
 module.exports = {
   getallBooks,
   booksById,
